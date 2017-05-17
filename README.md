@@ -1,8 +1,10 @@
 # docker_db
 
 さくっとMySQLとかPostgreSQLとかRedisとか試してみたいときに使う用
+
 手元の環境を汚さずに使いたいとき用
-fluentd入れたのは特に理由はない
+
+fluentd入れたのは特に理由はない  
 
 Usage
 
@@ -28,7 +30,7 @@ docker_redis_1      docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/
 
 * MySQL
 
-```sh
+```console
 $ mysql -uroot -h 0.0.0.0 -P 3306
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 2
@@ -47,7 +49,7 @@ mysql>
 
 * PostgreSQL
 
-```sh
+```console
 $ psql -h 0.0.0.0 -p 5432 -U postgres
 psql (9.6.2, server 8.4.22)
 Type "help" for help.
@@ -57,7 +59,7 @@ postgres=#
 
 * Redis
 
-```sh
+```console
 $ redis-cli -h 0.0.0.0 -p 6379
 0.0.0.0:6379>
 ```
