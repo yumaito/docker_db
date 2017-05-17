@@ -4,7 +4,7 @@
 
 手元の環境を汚さずに使いたいとき用
 
-fluentd入れたのは特に理由はない  
+fluentd入れたのは特に理由はない
 
 Usage
 
@@ -23,7 +23,7 @@ Name                     Command               State                        Port
 docker_fluentd_1    /bin/sh -c exec fluentd -c ...   Up      0.0.0.0:24224->24224/tcp, 0.0.0.0:5140->5140/tcp
 docker_mysql_1      docker-entrypoint.sh mysqld      Up      0.0.0.0:3306->3306/tcp
 docker_postgres_1   /docker-entrypoint.sh postgres   Up      0.0.0.0:5432->5432/tcp
-docker_redis_1      docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp docker-compose ps
+docker_redis_1      docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp
 ```
 
 それぞれhostとportを指定すれば繋げられます
